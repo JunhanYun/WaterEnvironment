@@ -43,3 +43,11 @@ library(ggpubr)
 
 install.packages("ggplot2")
 library(ggplot2)
+
+ggplot(dat) +
+  aes(x = Sepal.Length) +
+  geom_histogram(bins = 20)
+
+ggplot(dat) +
+  aes(x = Species, y =Sepal.Length) +
+  geom_boxplot()
